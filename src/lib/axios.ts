@@ -11,3 +11,15 @@ export const axios = Axios.create({
 export function axiosGet(url: string) {
   return axios.get(url).then((response) => response.data);
 }
+
+export function axiosPost(url: string, data?: any, params?: any) {
+  return axios.post(url, data, params).then((response) => response.data);
+}
+
+export function axiosPut(url: string, data?: any, params?: any) {
+  return axios.put(url, data, params).then((response) => response.data);
+}
+
+export function axiosDelete(url: string) {
+  return axios.delete(url).then((response) => response.data);
+}
